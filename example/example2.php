@@ -19,7 +19,7 @@ try {
     print_r($resp);
 
     //鉴权的有效时间: 1个小时.
-    $resp = $client->roomToken("testroom", "123", 'admin', (time()+3600)*1000*1000000);
+    $resp = $client->roomToken("testroom", "123", 'admin', (time()+3600));
     print_r($resp);
 } catch (\Exception $e) {
     echo "Error:", $e, "\n";
