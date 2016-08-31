@@ -75,7 +75,7 @@ class RoomClient
         $params['room_name'] = $roomName;
         $params['user_id'] = $userId;
         $params['perm'] = $perm;
-        $params['expire_at'] = $expireAt*1000*1000000;
+        $params['expire_at'] = $expireAt;
 
         $roomAccessString = json_encode($params);
 
